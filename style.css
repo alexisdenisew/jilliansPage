@@ -1,0 +1,196 @@
+/* Create three equal columns that floats next to each other */
+
+.bodyLoad {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f1f1f1;
+}
+
+.loader {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: linear-gradient(#158FBF, #D9CB11, #F28080);
+    animation: animate 1.2s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#B1BFFF, #95E4E8, #A3FFB8);
+}
+
+.loader span:nth-child(1) {
+    filter: blur(5px);
+}
+
+.loader span:nth-child(2) {
+    filter: blur(10px);
+}
+
+.loader span:nth-child(3) {
+    filter: blur(25px);
+}
+
+.loader span:nth-child(4) {
+    filter: blur(50px);
+}
+
+.loader:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: #f1f1f1;
+    border: solid white 10px;
+    border-radius: 50%;
+}
+
+
+
+
+/* GALLERY PAGES */
+
+#cover {
+    background: #FFF;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 80%;
+
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:before{
+  text-decoration: none;
+  color: black;
+}
+
+a:active{
+  text-decoration: none;
+  color: black;
+}
+
+a:after{
+  text-decoration: none;
+  color: black;
+}
+#topper{
+margin: 2%;
+font-family: 'Staatliches', cursive;
+}
+
+#secTitle{
+  font-family: 'Staatliches', cursive;
+}
+
+#extra{
+  font-family: 'Open Sans', sans-serif;
+}
+
+#boldHere{
+font-weight: bolder;
+}
+
+#name{
+  font-size: 200%;
+  font-family: 'Staatliches', cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;/* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.columna {
+  margin-top: 15%;
+  float: left;
+  width: 8%;
+  padding: 10px;/* Should be removed. Only for demonstration */
+}
+.columnb {
+  float: left;
+  width: 92%;
+  padding: 10px;/* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.rowa:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columna {
+    width: 100%;
+  }
+}
+
+.gallery{
+  width: 100%;
+  height: auto;
+  margin: 2%;
+}
+
+#photoSection{
+  margin: 3%;
+}
+
+/* HOME PAGE */
+
+#home{
+  margin-top: 20%;
+  margin-left: 3%;
+}
